@@ -1,0 +1,42 @@
+$facebook: #175abc;
+$instagram: #774119;
+$twitter: #29aeff;
+$google: #d33333;
+
+.social-icons {
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	.si-background {
+		background: $gray-darker;
+		&.facebook {
+			fill: $facebook;
+		}
+		&.twitter {
+			fill: $twitter;
+		}
+		&.instagram {
+			fill: $instagram;
+		}
+		&.google {
+			fill: $google;
+		}
+	}
+	.si-icon {
+		fill: white;
+	}
+	&:hover {
+		.facebook {
+			fill: darken($facebook,10%);
+		}
+		.twitter {
+			fill: darken($twitter,10%);
+		}
+		.instagram {
+			fill: darken($instagram,10%);
+		}
+		.google {
+			fill: darken($google,10%);
+		}
+	}
+}
